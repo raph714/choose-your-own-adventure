@@ -1,0 +1,32 @@
+table, th, td {
+	border: 1px solid white;
+}
+
+a {
+	color: #34e5eb;
+	padding: 8px;
+}
+
+li {
+	padding-bottom: 8px;
+}
+
+.center {
+	text-align: center;
+}
+
+.pad3x {
+	padding: 24px;
+}
+
+.upper {
+	text-transform: uppercase;
+}
+
+.big {
+	font-size: 72px;
+}
+
+.medium-width {
+	max-width: 640px;
+}
