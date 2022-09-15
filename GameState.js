@@ -8,7 +8,7 @@ const inventoryKey = {
 };
 
 // Pass in a `inventoryKey` to see if it exists for the current game state.
-// eg if(valueForKey(inventoryKey.hasShovel)) { ... }
+// eg if(valueForKey(inventoryKey.hasShovel) != null) { ... }
 function valueForKey(itemKey) {
   return params.get(itemKey);
 }
