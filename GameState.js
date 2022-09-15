@@ -1,5 +1,7 @@
 const params = new URLSearchParams(window.location.search);
 
+// Add any items or states here, the value will be the key used in the query parameters and should be
+// as short as possible to save space.
 const inventoryKey = {
   hasShovel: "a",
   hasHat: "b"
@@ -14,6 +16,9 @@ function valueForKey(itemKey) {
 // Title will be the link title, href should be the name of the html page, without ext
 // inventoryUpdate should be a Map with inventoryKey keys and values. A `null` value
 // will remove the key from the query.
+//
+// Values for the keys can be any standard text. For example, you can track a number of
+// wishes, a word, or just a 1 to indicate a state exists.
 //
 // const updates = new Map(); 
 // updates[inventoryKey.hasShovel] = 1; <- adding a shovel
