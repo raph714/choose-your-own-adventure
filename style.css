@@ -11,6 +11,14 @@ li {
 	padding-bottom: 8px;
 }
 
+body {
+	background: black;
+}
+
+#story {
+	color: green;
+}
+
 .center {
 	text-align: center;
 }
@@ -29,4 +37,8 @@ li {
 
 .medium-width {
 	max-width: 640px;
+}
+
+#links {
+	padding-top: 50px;
 }

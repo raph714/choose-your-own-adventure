@@ -4,39 +4,40 @@
 <head>
   <meta charset="utf-8">
 
-  <title>The Long Weekend</title>
+  <title>Bonetonio's Adventure</title>
 
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="GameState.js"></script>
 </head>
-<body style="background: #000; color: #FFF;">
+<body>
 
 <center>
-	<table style="margin: 100px;"><tr><td class="center pad3x">
-	<div style="color: green;">
-		
+	<table style="margin: 100px;"><tr><td class="pad3x">
+
 		<div id="story">
-			Monday, the only one exactly like this that will ever happen, yet it feels the same as the last monday, and the one before that.
+			<p>
+				The door jingled and Jason Bonetonio walked in. He stood for a moment, shaking rain off his collar and stamping his feet on the welcome mat, before walking up to the counter.
+			</p>
+			<p>
+				"The usual, Bones?" the attendant asked from behind the counter as he rang up a greasy looking hotdog for a man who looked like the last thing he needed was a hotdog.
+			</p>
+			<p>
+				"Yep, today is the day, Kumar, I can feel it," Jason said as he slapped his credit chip on the counter. Kumar added cheese from a bag and put the hot dog in the microwave before reaching under the counter for a Lucky Lunar Lazer lottery scratch-off and handing Jason his credit chip back. Jason picked up the ticket and thumbed the ID patch on the corner to tie it to him and it chirped a cheerful lazer sound in confirmation.
+			</p>
+			<p>
+				"Thanks, I'm going to be late for work," Jason said ...
+			</p>
 		</div>
 		
-		<br>
-		<br>
-		<div id="links"></div>
+		<div id="links">
+			<script type="text/javascript">
+				const updates = makeUpdate(inventoryKey.hasScratchOff, 1);
+				addLink("Put scratch-off in pocket and go to work", "/story/goToWork", updates);
 
-		<script type="text/javascript">
-			const addShovel = new Map();
-			addShovel[inventoryKey.hasShovel] = 1;
+				addLink("Scratch the lotto ticket before leaving", "/story/scratchOff", null);
+			</script>
+		</div>
 
-			const removeShovel = new Map;
-			removeShovel[inventoryKey.hasShovel] = null;
-
-			addLink("Add a shovel", "index", addShovel);
-
-			if (valueForKey(inventoryKey.hasShovel) != null) {
-				addLink("Use a shovel", "index", removeShovel);
-			}
-		</script>
-	</div>
 	</td></tr></table>
 </center>
 

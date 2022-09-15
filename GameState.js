@@ -3,7 +3,7 @@ const params = new URLSearchParams(window.location.search);
 // Add any items or states here, the value will be the key used in the query parameters and should be
 // as short as possible to save space.
 const inventoryKey = {
-  hasShovel: "a",
+  hasScratchOff: "a",
   hasHat: "b"
 };
 
@@ -11,6 +11,12 @@ const inventoryKey = {
 // eg if(valueForKey(inventoryKey.hasShovel) != null) { ... }
 function valueForKey(itemKey) {
   return params.get(itemKey);
+}
+
+function makeUpdate(key, value) {
+  const updates = new Map();
+  updates[key] = value;
+  return updates;
 }
 
 // Title will be the link title, href should be the name of the html page, without ext
